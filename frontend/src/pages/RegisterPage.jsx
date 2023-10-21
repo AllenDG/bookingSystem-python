@@ -28,12 +28,20 @@ export default function RegisterPage(){
     };
      
     let imgs = [
-      'https://as2.ftcdn.net/v2/jpg/03/39/70/91/1000_F_339709132_H9HSSTtTmayePcbARkTSB2qoZTubJ6bR.jpg',
+      'https://img.freepik.com/free-vector/software-integration-concept-illustration_114360-7277.jpg?w=826&t=st=1697856849~exp=1697857449~hmac=4513d462e00ae75bfb9f143c4fdae1ac04bc283eb19bb792107a48bd8e30ef2d',
     ];
      
   return (
     <div>
-        <div className="container h-100">
+        <div className="container h-100"
+         style={{
+
+                border: "1px solid #ccc", 
+                borderRadius: "10px", 
+                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)", 
+                padding: "100px",
+              }}>
+
           <div className="container-fluid h-custom">
             <div className="row d-flex justify-content-center align-items-center h-100">
               <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
@@ -63,7 +71,7 @@ export default function RegisterPage(){
                   </div>
  
                   <div className="text-center text-lg-start mt-4 pt-2">
-                    <button type="button" className="btn btn-primary btn-lg" onClick={() => registerUser()} >Sign Up</button>
+                  <button type="button" className="btn btn-primary btn-lg" onClick={() => registerUser()} style={{ backgroundColor: 'orange', border: 'none' }}>Sign Up</button>
                     <p className="small mt-2 pt-1 mb-0">Login to your account <a href="/" className="link-primary text-decoration-none">Click here!</a></p>
                   </div>
  
